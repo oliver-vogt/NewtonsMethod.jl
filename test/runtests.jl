@@ -44,5 +44,4 @@ g′(x) = 2*x
     @test newtonroot(m, x_0=0.5, tol=10E-9).value ≈ 4.0 rtol=1E-7
     @test !isapprox(newtonroot(m, m′, x_0=BigFloat(0.5), tol=10E-2).value,4.0)
 
-    # Write your tests here.
 end

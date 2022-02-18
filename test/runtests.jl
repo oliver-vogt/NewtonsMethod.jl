@@ -42,6 +42,6 @@ g′(x) = 2*x
     @test newtonroot(h, x_0=0.5, maxiter=5) == nothing
     @test newtonroot(b, b′, x_0=BigFloat(-2.5), maxiter=10_000).value ≈ -2^(1/3) 
     @test newtonroot(m, x_0=0.5, tol=10E-9).value ≈ 4.0 rtol=1E-7
-    @test isapprox(newtonroot(m, m′, x_0=BigFloat(0.5), tol=10E-2).value,4.0)
+    @test !isapprox(newtonroot(m, m′, x_0=BigFloat(0.5), tol=10E-2).value,4.0)
 
 end

@@ -1,0 +1,13 @@
+name = "NewtonsMethod"
+uuid = "ab60f896-aa29-471e-9f30-755d9f8a30b9"
+authors = ["Oliver Vogt <oliver.p.vogt@gmail.com> and contributors"]
+version = "0.1.0"
+
+[compat]
+julia = "1.6"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
